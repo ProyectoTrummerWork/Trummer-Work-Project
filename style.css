@@ -1,6 +1,9 @@
-/*Codigo css BASE de TrummerWork (edicion publica)*/
+/*Codigo BASE de TrummerWork */
 
+/* Import de FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Slabo+27px&display=swap');
 
+/*Inicio Estilos Globales*/
 :root{
     --colorgreen: #41B06E;
     --colorgreenHoover: #349159;
@@ -21,7 +24,7 @@
     --colorWhite: #ffffff;
     --colorWhiteHover: #c0c0c0;
 
-    --colorGray: #B4B4B8;
+    --colorGray: #B4B4B8 ;
     --colorGrayHover: #8a8a8a;
 
     --highlight-color: #e74c3c;
@@ -44,54 +47,29 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
-
-/*GENERAL (PREVIEW NUEVO)*/
 /* Estilos para los encabezados */
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     margin-bottom: 0.5em;
-  }
+}
+h1 {font-size: 3.5em;}
+h2 {font-size: 3.0em;}
+h3 {font-size: 2.5em;}
+h4 {font-size: 2.0em;}  
+h5 {font-size: 1.5em;}
+h6 {font-size: 1.25em;}
   
-h1 {
-    font-size: 3.5em;
-  }
-  
-h2 {
-    font-size: 3.0em;
-  }
-  
-h3 {
-    font-size: 2.5em;
-  }
-  
-h4 {
-    font-size: 2.0em;
-  }
-  
-h5 {
-    font-size: 1.5em;
-  }
-  
-h6 {
-    font-size: 1.25em;
-  }
-  
-  
-p {
-    margin-bottom: 1.15em;
-  }
+p {margin-bottom: 1.15em;}
   
 a {
     color: var(--primary-color);
     text-decoration: none;
-}
-  
+}  
 a:hover {
     color: var(--colorBlack);
     transition:  0.3s ease-in-out;
-  }
+}
   
 ul, ol {
     margin-bottom: 1em;
@@ -104,53 +82,61 @@ ul, ol {
     color: #fff;
     border-radius: 0.2em;
   }
-/*FIN GENERAL (PREVIEW NUEVO)*/
+/* FIN Estilos Globales*/
   
   
-/* Tipos de texto (NUEVO)*/
+/* INICIO Estilos TEXTOS */
+/*INICIO Tipos de textos*/
+.t-start{transform: scale();}
+.t-center{transform: scale();}
+.t-end{transform: scale();}
+
+
+
+
 .title-large {
     font-size: 2.5em;
-    color: var(--primary-color);
+    color: var(--colorBlack);
     margin-bottom: 0.5em;
     font-weight: bold;
   }
-  
 .title-medium {
     font-size: 2em;
-    color: var(--primary-color);
+    color: var(--colorBlack);
     margin-bottom: 0.5em;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-optical-sizing: auto;
     font-weight: bold;
   }
-  
 .title-small {
     font-size: 1.5em;
-    color: var(--primary-color);
+    color: var(--colorBlack);
     margin-bottom: 0.5em;
     font-weight: bold;
   }
   
-  
-  .subtitle /*h4*/ {
+.subtitle /*h4*/ {
     font-size: 1.25em;
     color: var(--secondary-color);
     margin-bottom: 0.5em;
     font-weight: semi-bold;
   }
   
-  .tw-p {
-    font-size: 1em;
-    color: var(--text-color);
+.tw-p {
+    font-size: 1.5em;
+    color: var(--colorBlack);
     margin-bottom: 1em;
     line-height: 1.6;
-  }
-  
-  .tw-p-small {
+    margin-top: 9px;
+    font-family: li;
+  } 
+.tw-p-small {
     font-size: 0.875em;
     color: var(--text-color);
     margin-bottom: 1em;
     line-height: 1.6;
   }
-  
   
 .tw-cita-texto {
     font-size: 1.25em;
@@ -161,7 +147,6 @@ ul, ol {
     background-color: #fff;
     font-style: italic;
   }
-  
 
 .text-resaltado {
     color: #fff;
@@ -169,51 +154,29 @@ ul, ol {
     border-radius: 0.2em;
     max-width: max-content;
   }
-
-.text-resaltado-negro {
-    
+.text-resaltado-negro { 
     background-color: var(--colorBlack);
     color: var(--colorWhite);
 }
-.text-resaltado-azul {
-    background-color: var(--colorblue);
-
-}
+.text-resaltado-azul {background-color: var(--colorblue);}
  
-
-.text-shadow {
-    text-shadow: 5px 2px 5px #151515;
-  }
+.text-shadow {text-shadow: 5px 2px 5px #151515;}
   
-
-.text-minusculas {
-    text-transform: uppercase;
-  }
-  
-.text-mayusculas {
-    text-transform: lowercase;
-  }
-  
-.text-capitalizado {
-    text-transform: capitalize;
-  }
-/*FIN Tipos de textos (NUEVO)*/
-  
-/*FUENTES (NUEVO)*/
+.text-minusculas {text-transform: uppercase;}
+.text-mayusculas {text-transform: lowercase;}
+.text-capitalizado {text-transform: capitalize;}
+    /*FIN Tipos de textos*/
+    /*INICIO FUENTES */
 .tw-mont {
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
   }
   
-.tw-lato {
-    font-family: "Lato", sans-serif;
-  }
-  
+.tw-lato {font-family: "Lato", sans-serif;}
 .tw-lato-bl {
     font-family: "Lato", sans-serif;
     font-weight: 700;
   }
- 
 .tw-lato-itl {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -225,42 +188,30 @@ ul, ol {
     font-optical-sizing: auto;
   }
   
-.tw-MeWa {
-    font-family: "Merriweather", serif;
-  }
-  
+.tw-MeWa {font-family: "Merriweather", serif;}
 .tw-MeWa-bl {
     font-family: "Merriweather", serif;
     font-weight: 700;
   }
   
-.tw-slabo{
-    font-family: "Slabo 27px", serif;
-  }
+.tw-slabo{font-family: "Slabo 27px", serif;}
   
-.tw-popp {
-    font-family: "Poppins", sans-serif;
-  }
-  
+.tw-popp {font-family: "Poppins", sans-serif;}
 .tw-popp-bl {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-  }
-  
+  } 
 .tw-popp-itl {
     font-family: "Poppins", sans-serif;
     font-style: italic;
-  }
-  
+  } 
 .tw-popp-bl-itl {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
   }
   
-.tw-beNeu {
-    font-family: "Bebas Neue", sans-serif;
-  }
+.tw-beNeu {font-family: "Bebas Neue", sans-serif;}
   
 .tw-confor {
     font-family: "Comfortaa", sans-serif;
@@ -271,9 +222,9 @@ ul, ol {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
   }
-/* Fuentes */  
-
-/* BACKGROUNDS */
+/*FIN FUENTES*/  
+/*FIN Estilos TEXTOS*/
+/* INICIO BACKGROUNDS */
 .bg-black {background-color: var(--colorBlack);}
 .bg-white { background-color: var(--colorWhite); }
 .bg-gray { background-color: var(--colorGray); }
@@ -306,13 +257,7 @@ ul, ol {
 .bg-crimson { background-color: #dc143c; }
 /* FIN BACKGROUNDS */
 
-.contenedor{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-}
-
-/* BOTONES */
+/* INICIO BOTONES */
 .boton{
     text-decoration: none;
     color: black;
@@ -322,7 +267,7 @@ ul, ol {
     margin: 5px 0px;
 }
 
-/* Inicio nuevito? */
+/*FeaturesButton*/
 .button-primary {
     background-color: var(--primary-color);
     color: var(--colorWhite);
@@ -356,7 +301,7 @@ ul, ol {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease-in;
 }
-/* Fin nuevito? */
+/*FIN FeaturesButton*/
 .boton-black{
     background-color: var(--colorBlack);
     color: white;
@@ -371,23 +316,19 @@ ul, ol {
     background-color: var(--colorgreen);
     color: white;
 }
-
 .boton-green:hover{
     background-color: var(--colorgreenHoover);
     color: white;
 }
 
-
 .boton-red{
     background-color: var(--colorRed);
     color: white;
 }
-
 .boton-red:hover{
     background-color: var(--colorRedHover);
     color: white;
 }
-
 
 .boton-white{
     background-color: var(--colorWhite);
@@ -399,13 +340,12 @@ ul, ol {
     color: rgb(255, 255, 255);
     border: 2px solid rgb(130, 130, 130);
 }
+/*FIN BOTONES*/
 
-
-/* css Grid */
+/* CSS Grid */
 .display-g{
     display: grid;
 }
-
 
 .columna-2{
     grid-template-columns: repeat(2, 1fr);
@@ -422,7 +362,6 @@ ul, ol {
 .columna-6{
     grid-template-columns: repeat(6, 1fr);
 }
-
 
 .fila-2{
     grid-template-rows: repeat(2,1fr);
@@ -446,16 +385,18 @@ ul, ol {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
-/* nuevito? */
+    /*FeaturesGrid*/
 .grid-1 { grid-template-columns: repeat(1, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-5 { grid-template-columns: repeat(5, 1fr); }
 .grid-6 { grid-template-columns: repeat(6, 1fr); }
+    /*FINFeaturesGrid*/
+/*FIN CSS Grid*/
 
 
-/* NAVBARS */
+/* INICIO NAVBARS */
 .navbar-tw{
     width: 100%;
     padding: 30px;
@@ -473,27 +414,21 @@ ul, ol {
     color: var(--colorWhite);  
     
 }
-
 .navbar-green{
     background-color: var(--colorgreen);
-    color: white;  
-    
+    color: white;     
 }
 .navbar-red{
     background-color: var(--colorRed);
     color: white;  
-    
 }
-
 .navbar-blue{
     background-color: var(--colorblue);
-    color: white !important; 
-    
+    color: white !important;    
 }
 .navbar-yelow{
     background-color: var(--colorYellow);
     color: var(--colorWhite);
-    
 }
 /* tamaños */
 .nb-medium{
@@ -510,11 +445,16 @@ ul, ol {
     color: rgb(255, 255, 255);
 }
 
-/* nuevito? */
-
+/*FeaturesNAVBAR*/
 .navbar-marca {
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
+}
+.navbar-marca:hover{
+    transform: scale(1.1, 1.1) ;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 .navbar-nav {
@@ -535,13 +475,10 @@ ul, ol {
     transform: scale(1.1, 1.1);
     transition: 0.1s ease-in-out;
 }
-
-
-/* Fin nuevito? */
-
+/*FIN FeaturesGrid*/
 /*FIN NAVBARS*/
 
-/* display flex */
+/* INICIO Display: flex */
 .d-flex{
     display: flex;
 }
@@ -556,7 +493,6 @@ ul, ol {
     text-align: end;
 }
 
-
 .jcontent-start{
     justify-content: start;
 }
@@ -567,7 +503,6 @@ ul, ol {
     justify-content: end;
 }
 
-
 .aitems-start{
     align-items: start;
 }
@@ -577,7 +512,6 @@ ul, ol {
 .aitems-end{
     align-items: end;
 }
-
 
 .gap-1{
     gap: 1vw;
@@ -594,7 +528,6 @@ ul, ol {
 .gap-5{
     gap: 5vw;
 }
-
 
 .fx-grow-1{
     flex-grow: 1;
@@ -614,26 +547,9 @@ ul, ol {
 .fx-grow-6{
     flex-grow: 6;
 }
-/* FIN display flex */
+/* FIN Display: flex */
 
-/* Cositas de texto */
-.m-0 { margin: 0 !important; }
-.mt-1 { margin-top: var(--spacing-small) !important; }
-.mt-2 { margin-top: var(--spacing-medium) !important; }
-.mt-3 { margin-top: var(--spacing-large) !important; }
-.mb-1 { margin-bottom: var(--spacing-small) !important; }
-.mb-2 { margin-bottom: var(--spacing-medium) !important; }
-.mb-3 { margin-bottom: var(--spacing-large) !important; }
-.p-0 { padding: 0 !important; }
-.pt-1 { padding-top: var(--spacing-small) !important; }
-.pt-2 { padding-top: var(--spacing-medium) !important; }
-.pt-3 { padding-top: var(--spacing-large) !important; }
-.pb-1 { padding-bottom: var(--spacing-small) !important; }
-.pb-2 { padding-bottom: var(--spacing-medium) !important; }
-.pb-3 { padding-bottom: var(--spacing-large) !important; }
-/* Fin Cositas de texto */
-
-/* Inicio de estilos tarjeta */
+/* INICIO de estilos tarjeta */
 .tarjetas{
     margin: 15px;
     border-color: var(--colorBlack);
@@ -649,7 +565,22 @@ ul, ol {
     transition: box-shadow 0.3s ease;
 }
 
-/* nuevito? */
+.tarjetas-extra /*Usa esto para el mensaje general*/ {
+    margin: 15px;
+    border-color: var(--colorBlack);
+    border-radius: 5px;
+    width: 852px;
+    max-width: max-content;
+    height: 100%;
+
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-medium);
+    background-color: var(--colorWhite);
+    transition: box-shadow 0.3s ease;
+}
+
+/*FeaturesTarjetas*/
 .tarjetas:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -664,22 +595,18 @@ ul, ol {
     font-size: 1em;
     color: var(--text-color);
 }
-/* Fin nuevito? */
-
-
-
+/*FIN FeaturesTarjetas*/
 .tarjetas-grandes {
-    width: 390px;
+    width: 385px;
     font-size: large;
+    height: 100%;
     max-width: max-content;
 }
-
 .tarjetas-pequenas {
     width: 200px;
     max-width: max-content;
     font-size: small;
 }
-
 .tarjetas-medianas {
     width: 295px;
     font-size: medium;
@@ -690,7 +617,6 @@ ul, ol {
     max-width: 100%;
     max-height: 215px;
 }
-
 .tarjetas-img-gn {
     border: none;
     max-width: max-content;
@@ -699,12 +625,68 @@ ul, ol {
     flex-direction: column;
     align-content: center safe;
 }
+/* FIN estilos tarjeta */
 
-/* Fin estilos tarjeta */
+/* INICIO Carousels */
+.container-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
 
+.container-slider ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    margin: 0;
+    animation: slide 32s infinite ease-in-out;
+}
+.container-slider li {
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+    position: relative;
+    flex-shrink: 0;
+}
 
+.texto-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--colorGray);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 0.5em;
+}
+.texto-slider h2 {
+    font-size: 50px;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
 
-/*VERSION ORIGINAL TRUMMERWORK */
+.container-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+
+}
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100vw; }
+    45% { margin-left: -100vw; }
+    50% { margin-left: -200vw; }
+    70% { margin-left: -200vw; }
+    75% { margin-left: -300vw; }
+    100% { margin-left: -300vw; }
+}
+
+/* FIN Carousels */
 
 /*COSITAS*/
 
@@ -713,6 +695,19 @@ ul, ol {
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--spacing-medium);
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.container-center {
+    display: grid;
+    place-items: center;
+    align-content: center;
 }
 
 .row {
@@ -732,13 +727,4 @@ ul, ol {
         flex-basis: 100%;
     }
 }
-
-
-
-/* New Card Styles */
-
-
-/* Navbar Styles */
-
-
-/*FIN COSITAS*/
+/*FIN DEL CODIGO*/
