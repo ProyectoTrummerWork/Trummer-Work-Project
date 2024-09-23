@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación: TrummerWork</title>
+    <link rel="icon" href="/TRUMMERWORK.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="tw-lato bg-whitelightComplementary">
+    <div class="navbar-tw navbar-blue">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div onclick="location.href='https://github.com/ProyectoTrummerWork/Trummer-Work-Proyect'" class="navbar-marca nav-title">TrummerWork</div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="/index.html" class="navbar-nav a">Inicio</a>
+          <a href="/documentacion.html" class="navbar-nav a">Documentación</a>
+          <a href="#" class="navbar-nav a">Contacto</a>
+        </div>
+      </div>
+                
+
+        <div class="container-slider-pgalt contenedor">
+            <ul id="slider">    
+                <li><img src="https://i.ytimg.com/vi/CxbMnt89Nnk/maxresdefault_live.jpg" alt=""></li>
+                <li><img src="https://s3.amazonaws.com/gravitalsoftware/ucn_web/websites/articles/cec29772-3ae6-402a-88fb-eba9c8c9e291.JPG" alt=""></li>
+                <li><img src="https://i.ibb.co/7gb7w8L/photo-5105309273092632004-y.jpg" alt="Equipo"></li>
+                <li><img src="https://i.ibb.co/PxHGM6N/photo-5105309273092632016-y.jpg" alt=""></li>
+            </ul>
+            <button class="prev-slide" onclick="prevSlide()">&#10094;</button>
+            <button class="next-slide" onclick="nextSlide()">&#10095;</button>
+            <div class="texto-slider-pgalt"><h3 onclick="location.href='https://github.com/ProyectoTrummerWork/Trummer-Work-Proyect'" class="title-large t-center">Documentación de TrummerWork (Beta v1)</h1></div>
+        </div>
+
+        <nav class="contenidos">
+            <a href="#introduccion">Introducción</a>
+            <a href="#estructura">Estructura del Proyecto</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#uso">Cómo Usar Tumorwork</a>
+            <a href="#conclusiones">Conclusiones</a>
+        </nav>
+    <main class="docubody">
+            <section class="partes" id="introduccion">
+                <h2>1. Introducción</h2>
+                <p>Trummerwork es un marco de interfaz de usuario con un diseño minimalista y facilidad de uso. El marco proporciona a los desarrolladores las herramientas básicas para crear páginas web de manera eficiente sin la complejidad de algunos marcos más potentes como Bootstrap. Sitios web diseñados para desarrolladores web sin los costos adicionales asociados con marcos más grandes. Ofrece diseño responsivo, bloques de construcción y herramientas esenciales para una fácil personalización.
+                </p>
+
+                <h3>- Diferencias Clave con Frameworks Populares</h3>
+                <ul>
+                    <li> <b>Ligero:</b> Trummerwork se centra en funcionalidades básicas, reduciendo los tiempos de carga y mejorando el rendimiento.</li>
+                    <li><b>JavaScript</b> Mínimo: A diferencia de frameworks como Bootstrap, Trummerwork se basa principalmente en CSS para su funcionalidad.</li>
+                    <li><b>Fácil de Personalizar:</b> Sencillo de modificar y extender sin necesidad de sumergirse en documentación compleja.</li>
+                </ul>
+                <h3>- Usar Trummerwork</h3>
+                <p>Trummerwork es ideal para:</p>
+                <ul>
+                    <li>Sitios web pequeños a medianos que no requieren interacciones JavaScript complejas.</li>
+                    <li>Desarrolladores que prefieren un enfoque más práctico para el estilo y el diseño.</li>
+                    <li>Proyectos donde el rendimiento y los tiempos de carga son críticos.</li>
+                    <li>Sitios web que necesitan una base sólida pero requieren una personalización extensiva.</li>
+                </ul>
+            </section>
+    
+            <section class="partes" id="estructura">
+                <h2>2. Estructura del Proyecto</h2>
+                <p>Tumorwork tiene una estructura simple para facilitar su integración en cualquier proyecto web. La estructura básica del proyecto incluye los siguientes elementos:</p>
+                <ul>
+                    <li><strong>CSS</strong>: La base de estilos del framework.</li>
+                    <li><strong>JS</strong>: Opcional para añadir funcionalidad extra.</li>
+                    <li><strong>Grid System</strong>: Un sistema de rejilla flexible para organizar el contenido.</li>
+                    <li><strong>Componentes</strong>: Herramientas adicionales como tooltips, modales y carruseles.</li>
+                </ul>
+                <h3>1. Instalación y Configuración</h2>
+                <p>Puedes incluir Trummerwork en tu proyecto así:</p>
+                <h3>- Descarga e Inclusión Local</h4>
+                <ol>
+                    <li>Descarga los archivos de Trummerwork desde el sitio web oficial.</li>
+                    <li>Extrae los archivos en el directorio de tu proyecto.</li>
+                    <li>Incluye el CSS y el JS opcional en tu archivo HTML:</li>
+                </ol>
+                <pre><code>&lt;link rel="stylesheet" href="ruta/a/style.css"&gt;
+&lt;script src="ruta/a/script.js"&gt;&lt;/script&gt;</code></pre>
+            </section>
+    
+            <section class="partes" id="funcionalidades">
+                <h2>Funcionalidades</h2>
+                <p>El framework Tumorwork ofrece las siguientes funcionalidades principales:</p>
+                <ul>
+                    <li>Sistema de rejilla (grid) adaptable.</li>
+                    <li>Navegación mejorada con menús responsivos.</li>
+                    <li>Componentes adicionales como tooltips, modales y carruseles, sin la necesidad de usar JavaScript pesado.</li>
+                    <li>Animaciones CSS personalizadas para mejorar la interacción del usuario.</li>
+                </ul>
+
+                <h2>4. Sistema de Rejilla</h2>
+    <p>Trummerwork utiliza un sistema de rejilla de 12 columnas que es responsive y flexible.</p>
+
+            <h3>Estructura Básica</h3>
+            <pre><code>&lt;div class="tw-container"&gt;
+        &lt;div class="tw-row"&gt;
+            &lt;div class="tw-col-6"&gt;Columna 1&lt;/div&gt;
+            &lt;div class="tw-col-6"&gt;Columna 2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+
+            <h3>Clases Responsive</h3>
+            <p>Usa diferentes prefijos de clase para varios tamaños de pantalla:</p>
+            <ul>
+                <li><code>tw-col-</code> para todos los tamaños de pantalla</li>
+                <li><code>tw-col-sm-</code> para pantallas pequeñas (≥576px)</li>
+                <li><code>tw-col-md-</code> para pantallas medianas (≥768px)</li>
+                <li><code>tw-col-lg-</code> para pantallas grandes (≥992px)</li>
+            </ul>
+
+            <h3>Ejemplo</h3>
+            <pre><code>&lt;div class="tw-row"&gt;
+        &lt;div class="tw-col-12 tw-col-md-6 tw-col-lg-4"&gt;
+            Esta columna es de ancho completo en pantallas pequeñas, medio ancho en pantallas medianas y un tercio de ancho en pantallas grandes.
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+            </section>
+    
+            <section class="partes" id="uso">
+                <h2>Cómo Usar Trummerwork</h2>
+                <p>Para utilizar Tumorwork en tu proyecto, simplemente incluye los archivos CSS en la cabecera de tu archivo HTML y personaliza los estilos según las necesidades de tu sitio web. Si necesitas funcionalidades adicionales como tooltips o modales, puedes añadir los componentes correspondientes al HTML.</p>
+                <pre><code>&lt;link rel="stylesheet" href="ruta/a/tumorwork.css"&gt;</code></pre>
+            </section>
+    
+            <section class="partes" id="conclusiones">
+                <h2>Conclusiones</h2>
+                <p>Trummerwork es ideal para aquellos que buscan un framework de front-end minimalista pero efectivo. Con sus funcionalidades básicas y su estructura ligera, este framework facilita la creación de páginas web profesionales sin sobrecargar el proyecto con funcionalidades innecesarias.</p>
+            </section>
+
+
+
+        
+        </div>
+        <script src="/script.js"></script>
+</body>
+</html>

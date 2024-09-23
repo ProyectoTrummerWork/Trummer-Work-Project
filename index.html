@@ -1,194 +1,225 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TRUMMERWORK</title>
-</head>
-<body>
-    <nav class="navbar-tw navbar-blue">
-        <div class="nb-logo fx-grow-1 d-flex ">
-            <h1>TRUMMERWORK</h1>
-        </div>
-        <div class="nav fx-grow-6 d-flex t-end gap-2  jcontent-end">
-            <a href="#" class="boton color-white">Home</a>
-            <a href="#" class="boton color-white">Contact</a>
-            <a href="#" class="boton color-white">About me</a>
-        </div>
-    </nav>
-
-    <div id="Cards"> 
-        <div class="tarjetas ">
-            <h1>Introduccion</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellat nam quia impedit, at dolores.</p>
-            <button class="boton boton-green boton-green:hover">Boton 1</button>
-    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TrummerWork-Proyect: Sitio Oficial</title>
+        <link rel="icon" href="/TRUMMERWORK.png">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body class="tw-lato bg-whitelightComplementary">
+            <!-- Navbar -->
+            <div class="navbar-tw navbar-blue">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div onclick="location.href='https://github.com/ProyectoTrummerWork/Trummer-Work-Proyect'" class="navbar-marca nav-title">TrummerWork</div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="/index.html" class="navbar-nav a">Inicio</a>
+                  <a href="/documentacion.html" class="navbar-nav a">Documentación</a>
+                  <a href="#" class="navbar-nav a">Contacto</a>
+                </div>
+              </div>
+              
+            <div class="container-slider contenedor">
+                <ul id="slider">
+                    <li>
+                        <img src="https://i.ytimg.com/vi/CxbMnt89Nnk/maxresdefault_live.jpg" alt="">
+                        <div class="texto-slider">
+                            <h3 class="title-large">TrummerWork Para TI</h2>
+                            <p class="tw-p tw-p-big">No hay <b>nada</b> imposible por hacer. <br> Tu proyecto ideal para estilizar sitios webs</p>
+                        </div>
+                    </li>
     
-        <div class=" tarjetas tarjetas-grandes">
-            <h1>Card 2 big</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum porro consequuntur adipisci animi sit quaerat.</p>
-            <a href="·">Link1</a>
-        </div>
+                    <li>
+                        <img src="https://s3.amazonaws.com/gravitalsoftware/ucn_web/websites/articles/cec29772-3ae6-402a-88fb-eba9c8c9e291.JPG" alt="">
+                        <div class="texto-slider">
+                            <h3 class="title-large">Innovación Continua</h2>
+                            <p class="tw-p">Nuestro proyecto se basa en la innovación constante. Descubre cómo estamos redefiniendo los estándares con nuestras soluciones avanzadas y creativas.</p>
+                        </div>
+                    </li>
     
-        <div class="tarjetas tarjetas-medianas">
-            <h1>Card 4 Medium</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-        </div>
+                    <li>
+                        <img src="https://i.ibb.co/7gb7w8L/photo-5105309273092632004-y.jpg" alt="Equipo">
+                        <div class="texto-slider">
+                            <h3 class="title-large">Equipo Dedicado</h2>
+                            <p class="tw-p">Detrás de cada gran proyecto hay un equipo comprometido. Conoce a las personas apasionadas que están haciendo posible este sueño y cómo su dedicación marca la diferencia.</p>
+                        </div>
+                    </li>
     
-        <div class="tarjetas tarjetas-pequenas">
-            <img src="alt" alt="https://educacionplasticayvisual.com/wp-content/uploads/imagen-funcion-estetica.jpg">
-            <h1>Card 3 small</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    
-        <div class="tarjetas tarjetas-medianas tarjetas-img-gn">
-            <img class="tarjetas-imagen" src="https://educacionplasticayvisual.com/wp-content/uploads/imagen-funcion-estetica.jpg" alt="source">
-            <h1>Card 5 img</h1>
-            <p>Lorem, ipsum dolor.</p>
-            <a href="#" class="boton boton-black ">More information</a>
-        </div>
-    </div>
+                    <li>
+                        <img src="https://i.ibb.co/PxHGM6N/photo-5105309273092632016-y.jpg" alt="">
+                        <div class="texto-slider">
+                            <h3 class="title-large">Tu Éxito, Nuestra Meta</h2>
+                            <p class="tw-p">Nuestro objetivo es tu éxito. Trabajamos incansablemente para asegurarnos de que cada paso que des sea hacia un futuro brillante y próspero. Confía en nosotros para alcanzar tus metas.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="prev-slide" onclick="prevSlide()">&#10094;</button>
+                <button class="next-slide" onclick="nextSlide()">&#10095;</button>
+            </div>
 
-<div class="accordion">
-    <div class="accordion-item">
-        <input type="checkbox" id="item1">
-        <label for="item1" class="accordion-title">Título 1</label>
-        <div class="accordion-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi distinctio itaque optio quis, molestias error harum nulla in vitae quo recusandae nostrum exercitationem animi dignissimos expedita incidunt hic voluptatibus nam. Quam, assumenda provident iste accusantium architecto aspernatur officiis aliquam esse in maiores sequi hic, laborum cupiditate voluptates aliquid molestiae obcaecati?</p>
-            <button class="boton boton-red boton-red:hover">Para Mas info</button>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <input type="checkbox" id="item2">
-        <label for="item2" class="accordion-title">Título 2</label>
-        <div class="accordion-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repudiandae. Officia magni sit eveniet alias dolor fuga provident amet tempore corporis soluta debitis eos, odit id fugiat ex quasi deserunt! Nemo soluta nulla, possimus accusantium tempora in dicta animi rerum doloribus. Error nisi assumenda tempore velit tempora sed doloribus cum.</p>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <input type="checkbox" id="item3">
-        <label for="item3" class="accordion-title">Título 3</label>
-        <div class="accordion-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, laudantium.
-            </p>
-        </div>
-    </div>
-</div>
-
-<br><br>
-
-<nav class="navbar-tw">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class=" fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton">Home</a>
-        <a href="#" class="boton">Contact</a>
-        <a href="#" class="boton">About me</a>
-    </div>
-</nav>
-
-
-<br><br><br>
-
-<nav class="navbar-tw navbar-black">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class=" nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton color-white">Home</a>
-        <a href="#" class="boton color-white">Contact</a>
-        <a href="#" class="boton color-white">About me</a>
-    </div>
-</nav>
-
-
-<br><br><br>
-<!--Navs -->
-<nav class="navbar-tw navbar-green">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class=" nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton color-white">Home</a>
-        <a href="#" class="boton color-white">Contact</a>
-        <a href="#" class="boton color-white">About me</a>
-    </div>
-</nav>
-
-
-<br><br><br>
-
-<nav class="navbar-tw navbar-red">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class=" nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton color-white">Home</a>
-        <a href="#" class="boton color-white">Contact</a>
-        <a href="#" class="boton color-white">About me</a>
-    </div>
-</nav>
-
-
-<br><br><br>
-
-<nav class="navbar-tw navbar-blue">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class="  nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton color-white">Home</a>
-        <a href="#" class="boton color-white">Contact</a>
-        <a href="#" class="boton color-white">About me</a>
-    </div>
-</nav>
-
-<br><br><br>
-
-<nav class="navbar-tw navbar-yelow">
-    <div class="nb-logo fx-grow-1 d-flex ">
-        <h1>TRUMMERWORK</h1>
-    </div>
-    <div class="  nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-        <a href="#" class="boton color-white">Home</a>
-        <a href="#" class="boton color-white">Contact</a>
-        <a href="#" class="boton color-white">About me</a>
-    </div>
-</nav>
+        <div class="container container-center t-center div-contd-inicio "> 
             <br><br>
-            <center><h1>Tamaños</h1></center>
+            <h4 class="title-medium t-center text-mayusculas">Tu camino hacia la excelencia comienza aquí</h4>
+                <br><br>
+                <div class="tarjetas-extra">
+                <div class="tarjetas-grande">
+                    <h4 class="title-small tarjetas-titulo">¡Tú defines tu éxito con TrummerWork!</h4>
+                    <p class="tw-cita-texto">Nuestro framework está diseñado para transformar tus ideas en realidad, brindándote todas las herramientas necesarias para llevar tus proyectos al siguiente nivel.</p>
+                    <p class="tarjetas-cuerpo">
+                    Con TrummerWork, cada decisión que tomas está respaldada por un sistema sólido y flexible, que se adapta a tus necesidades y te permite alcanzar tus metas con confianza.
+                        <br><br>   
+                    <strong>TrummerWork</strong> no es solo un conjunto de herramientas, es una filosofía de trabajo que te impulsa a dar lo mejor de ti en cada proyecto. Te ofrecemos la estructura y el soporte para que tu creatividad y ambición no tengan límites. ¡Es tu momento de brillar! Aprovecha al máximo cada recurso y lleva tus proyectos hacia un éxito imparable.</p>
+                    <a href="https://github.com/ProyectoTrummerWork/Trummer-Work-Project" target="_blank">
+                        <button class="boton boton-black">Visita el Repositorio de GitHub</button>
+                    </a>
+                </div>
+            </div>
             <br><br>
+        </div>
+        <div class="container div-contd-inicio container-center display-g columna-2 ">
+            <div class="tarjetas">
+                <img src="https://puzzlemania-154aa.kxcdn.com/products/2024/puzzle-schmidt-1000-pieces-random-galaxy.webp" alt="Innovación en Acción" class="tarjetas-imagen">
+                <h2 class="tarjetas-titulo">Transformando el Futuro con Innovación</h2>
+                <p class="tarjetas-cuerpo tw-p-small"> <strong class="text-resaltado text-resaltado-verde">Construyendo el Mañana, Hoy</strong><br>
+                    En un entorno donde la velocidad de cambio es la norma, nuestra misión es dotarte de las herramientas necesarias para que no solo te adaptes, sino que lideres el camino hacia el futuro. Nuestro equipo trabaja incansablemente para desarrollar soluciones que no solo atienden a las necesidades del presente, sino que también están diseñadas para anticiparse y capitalizar las oportunidades que trae el mañana. Cada paso en nuestro proceso, desde la planificación hasta la ejecución, está orientado a crear resultados que verdaderamente marquen la diferencia.</p>
+            </div>
+            <div class="tarjetas">
+                <h2 class="tarjetas-titulo">¿Por qué elegirnos?</h2>
+                <p class="tw-p-small tarjetas-cuerpo"> <strong class="text-resaltado text-resaltado-verde">Porque Tu Éxito es Nuestra Prioridad</strong> <br>
+                    Elegir TrummerWork significa optar por un enfoque donde tu éxito está en el centro de todo lo que hacemos. Combinamos nuestra experiencia en tecnología avanzada con una profunda comprensión de tus necesidades únicas, brindándote soluciones que transforman desafíos en oportunidades. Nuestro compromiso con la excelencia, junto con un enfoque personalizado, asegura que superaremos tus expectativas en cada paso del camino.</p>
+                <a href="mailto:trummerwork@outlook.com" class="card-button">Descubre Más</a>
+            </div>
+            <br>
+        </div>
+        <script src="/script.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAxcQWZDV0kUplfwdwH7YQ8LdomoZ_D2X4",
+              authDomain: "trummerwork-project.firebaseapp.com",
+              projectId: "trummerwork-project",
+              storageBucket: "trummerwork-project.appspot.com",
+              messagingSenderId: "1025356365223",
+              appId: "1:1025356365223:web:bf0558d8de38d4f3ac8a82",
+              measurementId: "G-EH107HC5YE"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+          <script>
+                        // Seleccionar elementos del DOM
+            const slider = document.getElementById('slider');
+            const slides = slider.querySelectorAll('li');
+            const prevButton = document.querySelector('.prev-slide');
+            const nextButton = document.querySelector('.next-slide');
 
-            <nav class="navbar-tw navbar-yelow nb-medium">
-                <div class="nb-logo fx-grow-1 d-flex ">
-                    <h1>TRUMMERWORK</h1>
-                </div>
-                <div class="  nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-                    <a href="#" class="boton color-white">Home</a>
-                    <a href="#" class="boton color-white">Contact</a>
-                    <a href="#" class="boton color-white">About me</a>
-                </div>
-            </nav>
-<br><br><br>
+            let currentIndex = 0;
+            let intervalId;
+            let timeoutId;
 
-            <nav class="navbar-tw navbar-red nb-small">
-                <div class="nb-logo fx-grow-1 d-flex ">
-                    <h1>TRUMMERWORK</h1>
-                </div>
-                <div class="  nav fx-grow-6 d-flex t-end gap-2  jcontent-end ">
-                    <a href="#" class="boton color-white">Home</a>
-                    <a href="#" class="boton color-white">Contact</a>
-                    <a href="#" class="boton color-white">About me</a>
-                </div>
-            </nav>
+            // Función para mostrar la diapositiva actual
+            function showSlide(index) {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+            w
+            // Función para ir a la siguiente diapositiva
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+                restartAutoSlide();
+            }
+
+            // Función para ir a la diapositiva anterior
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+                restartAutoSlide();
+            }
+
+            // Función para iniciar la animación automática
+            function startAutoSlide() {
+                intervalId = setInterval(nextSlide, 85000);
+            }
+
+            // Función para detener la animación automática
+            function stopAutoSlide() {
+                clearInterval(intervalId);
+            }
+
+            // Función para reiniciar la animación automática después de un tiempo de inactividad
+            function restartAutoSlide() {
+                stopAutoSlide();
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(startAutoSlide, 8000); // Reinicia después de 10 segundos de inactividad
+            }
+
+            // Iniciar la animación automática
+            startAutoSlide();
+
+            // Asegurarse de que las imágenes estén en su tamaño normal al cargar la página
+            window.addEventListener('load', () => {
+                slides.forEach(slide => {
+                    const img = slide.querySelector('img');
+                    if (img) {
+                        img.style.transform = 'scale(1)';
+                        img.style.transition = 'none';
+                    }
+                });
+            });
 
 
-            <br><br><br><br><br>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuIcon = document.querySelector('.menu-icon');
+                const navMenu = document.querySelector('.navbar-nav');
+
+                menuIcon.addEventListener('click', function() {
+                    menuIcon.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Cerrar el menú al hacer clic en un enlace
+                document.querySelectorAll('.navbar-nav a').forEach(n => n.addEventListener('click', () => {
+                    menuIcon.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }));
+            });
 
 
 
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuIcon = document.querySelector('.menu-icon');
+                const navMenu = document.querySelector('.navbar-nav');
 
+                menuIcon.addEventListener('click', function() {
+                    menuIcon.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Cerrar el menú al hacer clic en un enlace
+                document.querySelectorAll('.navbar-nav a').forEach(n => n.addEventListener('click', () => {
+                    menuIcon.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }));
+            });
+          </script>
 </body>
 </html>
